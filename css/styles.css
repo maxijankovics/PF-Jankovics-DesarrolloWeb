@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(167, 255, 255);
+    background-color: beige;
     margin: 0;
     font-family: "Roboto Mono", serif;
 }
@@ -42,8 +42,10 @@ header nav ul li a{
 }
 
 
-
 /* Main */
+
+
+/* Index */
 
 .banner-restaurant{
     height: 600px;
@@ -54,29 +56,61 @@ header nav ul li a{
 
 .texto {
     display: flex;
-    background-color: white;
-
+    justify-content: space-evenly;
+    padding: 30px;
 }
 
-.texto div{
+.texto div {
+    background-color: beige;
+    border: 5px solid red;
+    border-radius: 10px;
+    width: 25%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+    align-content: center;
 }
+
+.texto div h2 {
+    font-family: "Sedan SC", serif;
+}
+
 
 .localizacion {
     display: flex;
-    justify-items: center;
-    margin: 50px;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.localizacion div p{
-    background-color: white;
-    margin-right: 20px;
-    font-size: x-large;
+.localizacion div {
+    margin: 5%;
+    justify-content: space-evenly;
+}
+
+.localizacion div div{
+    text-align: center;
+    align-content: center;
+    background-color: brown;
+    border: 5px solid red;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    height: 200px;
+    
+}
+
+/* Fin index */
+
+/* Contacto */
+
+.contacto {
+    height: 600px;
+}
+
+.contacto div {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
 }
 
 .titulo-carrusel {
@@ -106,7 +140,6 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    margin-top: 50%;
 }
 
 footer div a img{
