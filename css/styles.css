@@ -101,6 +101,27 @@ header nav ul li a{
 
 /* Fin index */
 
+/* Nosotros */
+
+.sobre-nosotros {
+    height: 800px;
+}
+
+.tres-en-fila {
+    display: flex;
+    padding-top: 10%;
+}
+
+.tres-en-fila div {
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+/* Fin nosotros */
+
 /* Carta */
 
 
