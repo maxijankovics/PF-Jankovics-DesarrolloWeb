@@ -16,7 +16,11 @@ header{
     box-sizing: border-box;
     }
 
-header nav img{
+header #btn_menu, header label, .logo{
+    display: none;
+}
+
+    header nav img{
     width: 150px;
     height: 120px;
     display: block;
@@ -41,6 +45,9 @@ header nav ul li a{
     font-size: 25px;
 }
 
+header {
+    color: beige;
+}
 
 /* Main */
 
@@ -76,7 +83,7 @@ header nav ul li a{
 
 .localizacion {
     display: flex;
-    height: 600px;
+    height: auto;
     justify-content: space-between;
     align-items: center;
 
@@ -230,16 +237,81 @@ footer div a img{
 
 /* Media querys */
 
-/* Mobile */
-@media (min-width: 1024px){
+/* Tablet */
+@media (max-width: 1024px){
 
 }
 
-/* Tablet */
-@media (max-width: 480px){
-    body{
-        display: flex;
+/* Mobile */
+@media (max-width: 768px){
+    .banner-restaurant{
+        height: auto;
+    }
+    
+    .texto{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    }
+
+    .texto div{
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .localizacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .localizacion div iframe{
+        max-width: 90%;
+        max-height: auto;
+    }
+
+    /* Header */
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo{
+        display: block;
+        width: 100px;
+        margin-left: 25px;
+    }
+
+    header label{
+        display: block;
+        position: relative;
+        right: 25px;
+    }
+
+    header label img{
+        width: 50px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 86px;
+        background-color: black;
+        width: 100%;
+        visibility: hidden;
+        transition: visibility 1s, opacity 1s ease;
+        opacity: 0;
+    }
+
+    #btn_menu:checked ~ .menu{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .logo-oculto{
+        display: none;
     }
 }
