@@ -111,26 +111,37 @@ header {
 /* Nosotros */
 
 .sobre-nosotros {
-    height: 800px;
+    height: auto;
+    padding: 5%;
 }
 
-.tres-en-fila {
-    display: flex;
-    padding-top: 10%;
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
-.tres-en-fila div {
+.contenido-nosotros div{
     text-align: center;
-    align-items: center;
-    padding: 1rem;
 }
 
+.contenido-nosotros div h2{
+    font-family: "Sedan SC", serif;
+    font-weight: 100;
+}
+
+.contenido-nosotros div img{
+    width: 80%;
+    border: 5px solid brown;
+    border-radius: 10px 0px;
+
+}
 
 
 /* Fin nosotros */
 
 /* Carta */
-
 
 .espacio-carta {
     height: 100px;
@@ -150,7 +161,6 @@ header {
     border-radius: 10px;
     margin: 2rem;
 }
-
 
 .column-2.carta {
     display: grid;
@@ -183,19 +193,15 @@ header {
     font-weight: bold;
 }
 
-
 /* Fin carta */
 
-/* Contacto */
+/* Platos */
 
-.contacto {
-    height: 600px;
-}
-
-.contacto div {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 5%;
+.texto-y-carrusel{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    align-items: center;
 }
 
 .titulo-carrusel {
@@ -203,6 +209,11 @@ header {
     font-family: "Sedan SC", serif;
     font-size: 50px;
     justify-content: center;
+}
+
+.texto-comida{
+    text-align: center;
+    padding: 5%;
 }
 
 #carrusel{
@@ -214,8 +225,35 @@ header {
     padding: 100px;
 }
 
-/* Fin contacto */
+/* Fin platos */
 
+/* Contacto */
+
+.titulo-contacto{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    
+}
+
+.titulo-contacto div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sedan SC", serif;
+}
+
+.contacto {
+    height: 600px;
+}
+
+.contacto div {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+}
+
+/* Fin contacto */
 
 /* Footer */
 
@@ -244,6 +282,9 @@ footer div a img{
 
 /* Mobile */
 @media (max-width: 768px){
+    
+    /* Index */
+    
     .banner-restaurant{
         height: auto;
     }
@@ -267,6 +308,53 @@ footer div a img{
         max-width: 90%;
         max-height: auto;
     }
+
+    /* Fin index */
+
+    /* Nosotros */
+
+    .contenido-nosotros{
+        display:flex;
+        flex-direction: column;
+    }
+    .contenido-nosotros div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Fin nosotros */
+
+    /* Carta */
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrap.column-2.carta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Fin carta */
+
+    /* Platos */
+
+    .texto-y-carrusel{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo-carrusel{
+        font-size: 30px;
+    }
+
+    #carrusel{
+        width: 80%;
+    }
+
+    /* Fin platos */
 
     /* Header */
     
