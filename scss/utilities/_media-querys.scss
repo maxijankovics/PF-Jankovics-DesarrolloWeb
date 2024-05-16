@@ -1,0 +1,114 @@
+//Tablet
+@media (max-width: 1024px){
+
+}
+//Mobile
+@media (max-width: 768px){
+    //Header
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: block;
+            width: 100px;
+            margin-left: 25px;
+        }
+        label{
+            display: block;
+            position: relative;
+            right: 25px;
+            img{
+                width: 50px;
+            }
+        }
+        .menu{
+            position: absolute;
+            top: 86px;
+            background-color: black;
+            width: 100%;
+            visibility: hidden;
+            transition: visibility 1s, opacity 1s ease;
+            opacity: 0;
+            ul{
+                flex-direction: column;
+            }
+        }
+        #btn_menu:checked ~ .menu{
+            visibility: visible;
+            opacity: 1;
+        }
+        nav{
+            .logo-oculto{
+                display: none;
+            }
+        }
+    }
+    
+    //Main index
+    .main-index{
+        .banner-restaurant{
+            height: auto;
+            .texto{
+                flex-direction: column;
+                align-items: center;
+                div{
+                    width: 80%;
+                    margin: 1rem;
+                }
+            }
+        }
+        .localizacion{
+            flex-direction: column;
+            align-items: center;
+            div{
+                iframe{
+                    max-width: 90%;
+                    max-height: auto;
+                }
+            }
+        }
+    }
+
+    //Main nosotros
+    .main-nosotros{
+        .sobre-nosotros{
+            .contenido-nosotros{
+                display:flex;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    //Main carta
+    .main-carta{
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            .wrap.column-2.carta{
+                display: flex;
+                flex-direction: column;
+                width:80%;
+            }
+        }
+    }
+
+    //Main platos
+    .main-platos{
+        .titulo-carrusel{
+            font-size: 30px;
+        }
+        .texto-y-carrusel{
+            display: flex;
+            flex-direction: column;
+            #carrusel{
+                width: 80%;
+            }
+        }
+    }
+}

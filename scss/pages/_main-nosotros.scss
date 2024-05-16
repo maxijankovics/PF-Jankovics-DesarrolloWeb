@@ -1,0 +1,24 @@
+.main-nosotros{
+    .sobre-nosotros{
+        height: auto;
+        padding: 5%;
+        .contenido-nosotros{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 2rem;
+            row-gap: 2rem;
+            div{
+                text-align: center;
+                h2{
+                    font-family: "Sedan SC", serif;
+                    font-weight: 100;
+                }
+                img{
+                    width: 80%;
+                    border: 5px solid brown;
+                    border-radius: 10px 0px;
+                }
+            }
+        }
+    }
+}

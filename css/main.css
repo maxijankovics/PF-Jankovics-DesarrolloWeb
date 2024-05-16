@@ -1,3 +1,290 @@
+body {
+  background-color: beige;
+  margin: 0;
+  font-family: "Roboto Mono", serif;
+}
 
+header {
+  background-color: black;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+header #btn_menu, header label, header .logo {
+  display: none;
+}
+header nav img {
+  width: 150px;
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+  align-items: center;
+  font-family: "Sedan SC", serif;
+  margin: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: beige;
+  font-size: 25px;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-index .banner-restaurant {
+  height: 600px;
+  background-image: url(./../img/banner-restaurant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-index .banner-restaurant .texto {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.main-index .banner-restaurant .texto div {
+  background-color: beige;
+  border: 5px solid red;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  align-content: center;
+}
+.main-index .banner-restaurant .texto div h2 {
+  font-family: "Sedan SC", serif;
+}
+.main-index .localizacion {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-index .localizacion div {
+  margin: 5%;
+  justify-content: space-evenly;
+}
+.main-index .localizacion div div {
+  text-align: center;
+  align-content: center;
+  background-color: brown;
+  border: 5px solid red;
+  color: white;
+  border-radius: 10px;
+  font-size: large;
+  height: 200px;
+}
+
+.main-nosotros .sobre-nosotros {
+  height: auto;
+  padding: 5%;
+}
+.main-nosotros .sobre-nosotros .contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.main-nosotros .sobre-nosotros .contenido-nosotros div {
+  text-align: center;
+}
+.main-nosotros .sobre-nosotros .contenido-nosotros div h2 {
+  font-family: "Sedan SC", serif;
+  font-weight: 100;
+}
+.main-nosotros .sobre-nosotros .contenido-nosotros div img {
+  width: 80%;
+  border: 5px solid brown;
+  border-radius: 10px 0px;
+}
+
+.main-carta .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-carta .wrap .wrap-title-section {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  color: white;
+  font-family: "Sedan SC", serif;
+  border-radius: 10px;
+  margin: 2rem;
+}
+.main-carta .wrap .column-2.carta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.main-carta .wrap .column-2.carta .plato-carta {
+  display: flex;
+  align-items: center;
+  border: 1px solid brown;
+  border-radius: 10px;
+  padding: 10px;
+}
+.main-carta .wrap .column-2.carta .plato-carta .titulo-plato-carta {
+  border: 1px solid brown;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  padding: 0 1rem;
+  flex-basis: 80%;
+}
+.main-carta .wrap .column-2.carta .plato-carta .precio-plato-carta {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: center;
+  font-weight: bold;
+}
+.main-carta .espacio-carta {
+  height: 100px;
+}
+
+.main-platos .titulo-carrusel {
+  display: flex;
+  font-family: "Sedan SC", serif;
+  font-size: 50px;
+  justify-content: center;
+}
+.main-platos .texto-y-carrusel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  align-items: center;
+}
+.main-platos .texto-y-carrusel .texto-comida {
+  text-align: center;
+  padding: 5%;
+}
+.main-platos .texto-y-carrusel #carrusel {
+  display: block;
+  padding: 5%;
+}
+
+.main-contacto .titulo-contacto {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+.main-contacto .titulo-contacto div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sedan SC", serif;
+}
+.main-contacto .contacto {
+  height: 600px;
+}
+.main-contacto .contacto div {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+footer div a img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    display: block;
+    width: 100px;
+    margin-left: 25px;
+  }
+  header label {
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+  header label img {
+    width: 50px;
+  }
+  header .menu {
+    position: absolute;
+    top: 86px;
+    background-color: black;
+    width: 100%;
+    visibility: hidden;
+    transition: visibility 1s, opacity 1s ease;
+    opacity: 0;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header #btn_menu:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav .logo-oculto {
+    display: none;
+  }
+  .main-index .banner-restaurant {
+    height: auto;
+  }
+  .main-index .banner-restaurant .texto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-index .banner-restaurant .texto div {
+    width: 80%;
+    margin: 1rem;
+  }
+  .main-index .localizacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-index .localizacion div iframe {
+    max-width: 90%;
+    max-height: auto;
+  }
+  .main-nosotros .sobre-nosotros .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-nosotros .sobre-nosotros .contenido-nosotros div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-carta .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-carta .wrap .wrap.column-2.carta {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .main-platos .titulo-carrusel {
+    font-size: 30px;
+  }
+  .main-platos .texto-y-carrusel {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-platos .texto-y-carrusel #carrusel {
+    width: 80%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

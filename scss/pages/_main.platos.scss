@@ -1,0 +1,22 @@
+.main-platos{
+    .titulo-carrusel{
+        display: flex;
+        font-family: "Sedan SC", serif;
+        font-size: 50px;
+        justify-content: center;
+    }
+    .texto-y-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1rem;
+        align-items: center;
+        .texto-comida{
+            text-align: center;
+            padding: 5%;
+        }
+        #carrusel{
+            display: block;
+            padding: 5%;
+        }
+    }
+}

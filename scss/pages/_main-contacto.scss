@@ -1,0 +1,21 @@
+.main-contacto{
+    .titulo-contacto{
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Sedan SC", serif;
+        }
+    }
+    .contacto{
+        height: 600px;
+        div{
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5%;
+        }
+    }
+}
