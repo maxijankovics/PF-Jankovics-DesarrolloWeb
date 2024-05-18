@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platos</title>
+    <meta name="descrption" content="Descubre los exquisitos platos de Bistro del Mar, donde la calidad y la creatividad se unen. Desde suculentas carnes hasta pastas frescas y especialidades gourmet, cada plato está preparado con ingredientes selectos y una pasión por la excelencia culinaria.">
+    <meta name="keywords" content="platos del restaurante, especialidades de Bistro del Mar, carnes suculentas, pastas frescas, platos gourmet, excelencia culinaria, ingredientes selectos, delicias gastronómicas, platos creativos, menú de platos">
     <!-- Links de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,8 @@
     <!-- Link css -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,6 +37,9 @@
         </nav>
     </header>
     <main class="main-platos">
+        <div class="titulo-platos" data-aos="zoom-out" data-aos-duration="1500">
+            <h1>Nuestros platos</h1>
+        </div>
         <div class="titulo-carrusel">Nuestras carnes</div>
         <section class="texto-y-carrusel">
             <div class="texto-comida">
@@ -101,5 +108,10 @@
     </footer>
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

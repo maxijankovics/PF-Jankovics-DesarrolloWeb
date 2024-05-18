@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <meta name="description" content="Contáctanos en Bistro del Mar para reservas, consultas o cualquier pregunta. Estamos aquí para ayudarte a disfrutar de una experiencia gastronómica excepcional. ¡Esperamos tu mensaje!">
+    <meta name="keywords" content="contacto, reservas, Bistro del Mar, ubicación, dirección, teléfono, correo electrónico, horario de atención, consultas, formulario de contacto, atención al cliente">
     <!-- Links de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,8 @@
     <!-- Link css -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/main.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,11 +37,9 @@
         </nav>
     </header>
     <main class="main-contacto">
-        <section class="titulo-contacto">
-            <div>
-                <h1>Nos interesa saber tu opinion!</h1>
-            </div>
-        </section>
+        <div class="titulo-contacto" data-aos="fade-up" data-aos-duration="1500">
+            <h1>Nos interesa saber tu opinion!</h1>
+        </div>
         <section class="contacto">
             <div class="contenedor">
             <form class="row g-3">
@@ -66,5 +68,10 @@
             <a href="https://api.whatsapp.com/send/?phone=598458800&text&type=phone_number&app_absent=0"><img src="../img/whatsapp.png" alt="Logo whatsapp"></a>
         </div>
     </footer>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

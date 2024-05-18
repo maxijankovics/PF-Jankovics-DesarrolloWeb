@@ -1,13 +1,11 @@
 .main-contacto{
     .titulo-contacto{
-        display: flex;
-        height: 100px;
-        justify-content: center;
-        div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Sedan SC", serif;
+        padding: 5%;
+        text-align: center;
+        font-family: "Sedan SC", serif;
+        text-decoration: underline;
+        h1{
+            font-size: 50px;
         }
     }
     .contacto{

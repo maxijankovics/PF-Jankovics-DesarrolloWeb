@@ -37,6 +37,19 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+.main-index .titulo-index {
+  padding: 5%;
+  text-align: center;
+  font-family: "Sedan SC", serif;
+  text-decoration: underline;
+}
+.main-index .titulo-index h1 {
+  font-size: 50px;
+  background-color: beige;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid brown;
+}
 .main-index .banner-restaurant {
   height: 600px;
   background-image: url(./../img/banner-restaurant.jpg);
@@ -80,6 +93,15 @@ header nav ul li a:hover {
   height: 200px;
 }
 
+.main-nosotros .titulo-nosotros {
+  padding: 5%;
+  text-align: center;
+  font-family: "Sedan SC", serif;
+  text-decoration: underline;
+}
+.main-nosotros .titulo-nosotros h1 {
+  font-size: 50px;
+}
 .main-nosotros .sobre-nosotros {
   height: auto;
   padding: 5%;
@@ -103,6 +125,15 @@ header nav ul li a:hover {
   border-radius: 10px 0px;
 }
 
+.main-carta .titulo-carta {
+  padding: 5%;
+  text-align: center;
+  font-family: "Sedan SC", serif;
+  text-decoration: underline;
+}
+.main-carta .titulo-carta h1 {
+  font-size: 50px;
+}
 .main-carta .wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -147,10 +178,19 @@ header nav ul li a:hover {
   height: 100px;
 }
 
+.main-platos .titulo-platos {
+  padding: 5%;
+  text-align: center;
+  font-family: "Sedan SC", serif;
+  text-decoration: underline;
+}
+.main-platos .titulo-platos h1 {
+  font-size: 50px;
+}
 .main-platos .titulo-carrusel {
   display: flex;
   font-family: "Sedan SC", serif;
-  font-size: 50px;
+  font-size: 40px;
   justify-content: center;
 }
 .main-platos .texto-y-carrusel {
@@ -169,15 +209,13 @@ header nav ul li a:hover {
 }
 
 .main-contacto .titulo-contacto {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-}
-.main-contacto .titulo-contacto div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5%;
+  text-align: center;
   font-family: "Sedan SC", serif;
+  text-decoration: underline;
+}
+.main-contacto .titulo-contacto h1 {
+  font-size: 50px;
 }
 .main-contacto .contacto {
   height: 600px;
