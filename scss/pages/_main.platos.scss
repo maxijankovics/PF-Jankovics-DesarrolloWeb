@@ -2,15 +2,17 @@
     .titulo-platos{
         padding: 5%;
         text-align: center;
-        font-family: "Sedan SC", serif;
+        font-family: $fuente-titulo;
         text-decoration: underline;
+        position: relative;
+        z-index: -1;
         h1{
             font-size: 50px;
         }
     }
     .titulo-carrusel{
         display: flex;
-        font-family: "Sedan SC", serif;
+        font-family: $fuente-titulo;
         font-size: 40px;
         justify-content: center;
     }

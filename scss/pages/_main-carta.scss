@@ -2,8 +2,10 @@
     .titulo-carta{
         padding: 5%;
         text-align: center;
-        font-family: "Sedan SC", serif;
+        font-family: $fuente-titulo;
         text-decoration: underline;
+        position: relative;
+        z-index: -1;
         h1{
             font-size: 50px;
         }
@@ -14,9 +16,9 @@
         .wrap-title-section{
             display: flex;
             justify-content: center;
-            background-color: brown;
-            color: white;
-            font-family: "Sedan SC", serif;
+            background-color: nth($list: $colores, $n: 2);
+            color: nth($list: $colores, $n: 5);
+            font-family: $fuente-titulo;
             border-radius: 10px;
             margin: 2rem;
         }
@@ -28,11 +30,11 @@
             .plato-carta{
                 display: flex;
                 align-items: center;
-                border: 1px solid brown;
+                border: 1px solid nth($list: $colores, $n: 2);
                 border-radius: 10px;
                 padding: 10px;
                 .titulo-plato-carta{
-                    border: 1px solid brown;
+                    border: 1px solid nth($list: $colores, $n: 2);
                     border-bottom: none;
                     border-top: none;
                     border-left: none;

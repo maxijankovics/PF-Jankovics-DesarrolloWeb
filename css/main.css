@@ -37,24 +37,28 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-.main-index .titulo-index {
+.main-index .banner-restaurant {
+  position: relative;
+  z-index: -2;
+  height: 600px;
+  background-image: url(./../img/banner-restaurant.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-index .banner-restaurant .titulo-index {
+  position: relative;
+  z-index: -1;
   padding: 5%;
   text-align: center;
   font-family: "Sedan SC", serif;
   text-decoration: underline;
 }
-.main-index .titulo-index h1 {
+.main-index .banner-restaurant .titulo-index h1 {
   font-size: 50px;
   background-color: beige;
   width: auto;
   border-radius: 10px;
   border: 2px solid brown;
-}
-.main-index .banner-restaurant {
-  height: 600px;
-  background-image: url(./../img/banner-restaurant.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .main-index .banner-restaurant .texto {
   display: flex;
@@ -98,6 +102,8 @@ header nav ul li a:hover {
   text-align: center;
   font-family: "Sedan SC", serif;
   text-decoration: underline;
+  position: relative;
+  z-index: -1;
 }
 .main-nosotros .titulo-nosotros h1 {
   font-size: 50px;
@@ -130,6 +136,8 @@ header nav ul li a:hover {
   text-align: center;
   font-family: "Sedan SC", serif;
   text-decoration: underline;
+  position: relative;
+  z-index: -1;
 }
 .main-carta .titulo-carta h1 {
   font-size: 50px;
@@ -183,6 +191,8 @@ header nav ul li a:hover {
   text-align: center;
   font-family: "Sedan SC", serif;
   text-decoration: underline;
+  position: relative;
+  z-index: -1;
 }
 .main-platos .titulo-platos h1 {
   font-size: 50px;
@@ -213,6 +223,8 @@ header nav ul li a:hover {
   text-align: center;
   font-family: "Sedan SC", serif;
   text-decoration: underline;
+  position: relative;
+  z-index: -1;
 }
 .main-contacto .titulo-contacto h1 {
   font-size: 50px;

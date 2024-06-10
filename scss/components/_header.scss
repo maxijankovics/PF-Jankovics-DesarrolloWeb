@@ -1,5 +1,5 @@
 header{
-    background-color: black;
+    background-color: nth($list: $colores, $n: 4);
     margin-bottom: 0;
     box-sizing: border-box;
     #btn_menu, label, .logo {
@@ -19,12 +19,12 @@ header{
             justify-content: space-evenly;
             padding: 20px 30px;
             align-items: center;
-            font-family: "Sedan SC", serif;
+            font-family: $fuente-titulo;
             margin: 0;
             li{
                 a{
                     text-decoration: none;
-                    color: beige;
+                    color: nth($list: $colores, $n: 1);
                     font-size: 25px;
                     &:hover{
                         text-decoration: underline;
